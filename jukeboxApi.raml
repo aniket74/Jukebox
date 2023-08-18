@@ -7,5 +7,13 @@ mediaType:
   get:
     queryParameters:
       songTitle: 
-      description:       
-  
+        description: "Song Title"
+        required: true
+        minLength: 3
+        type: string
+        example: "Get L"
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include Examples/response.json
