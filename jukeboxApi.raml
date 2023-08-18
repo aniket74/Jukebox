@@ -17,4 +17,6 @@ mediaType:
         body:
           application/json:
             example: !include Examples/response.json
-  /
+  /{songId}:
+    get:
+      description: Get the song with `songId = <resourcePathName>
